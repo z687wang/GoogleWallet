@@ -3,7 +3,7 @@ const databaseUrl = 'bolt://138.197.144.198:7687';
 
 class GraphicDatabase {
   constructor() {
-    this.driver = neo4j.driver(databaseUrl, neo4j.auth.basic('neo4j', 'wangzhe1998'));
+    this.driver = neo4j.driver(databaseUrl, neo4j.auth.basic('neo4j', '********'));
   }
   
   async createPeople(contactName, contactId, type, dest) {
